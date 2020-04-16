@@ -1,0 +1,9 @@
+---
+- name: Delete User from variable
+  hosts: all
+  tasks:
+  - name: Eliminar Usuario {{ user_delete }}en sistema linux indicado.
+    user:
+      name: "{{ user_delete }}"
+      state: absent
+      remove: yes

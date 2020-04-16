@@ -5,5 +5,5 @@
   - name: Copy static index.html to Webserver
     template:
       src: index.html.j2
-      dest: /usr/share/tomcat/webapps/ROOT/index.html
+      dest: /var/www/html/index.html
       mode: 0644

@@ -1,0 +1,17 @@
+---
+- name: Chequear website 
+  hosts: localhost
+  gather_facts: false
+  tasks:
+  - name: Curl website
+    command: curl "http://web.expertice.local"
+    register: webpage
+  
+  - debug: var=webpage.stdout  
+  
+  - name: Fail
+    fail:
+    when: "'Nuestro' not in webpage.stdout" 
+  
+  - name: Success
+    debug: msg="Congrats Yours Website is working!"

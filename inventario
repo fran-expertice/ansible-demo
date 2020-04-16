@@ -1,0 +1,8 @@
+[webservers]
+web.expertice.local
+
+[logservers]
+rek.expertice.local
+
+[dnsservers]
+dns.expertice.local
