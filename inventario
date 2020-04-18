@@ -6,3 +6,6 @@ rek.expertice.local
 
 [dnsservers]
 dns.expertice.local
+
+[db_servers]
+db.expertice.local
