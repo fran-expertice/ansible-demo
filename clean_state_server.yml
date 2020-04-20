@@ -1,6 +1,9 @@
 ---
 - name: Desinstala Apache httpd
-  hosts: all
+  gather_facts: no
+  hosts: "{{ servidor }}"
+#  vars:
+#   servidor: server 
   tasks:
   - name: Desinstala httpd
     package:
@@ -11,6 +14,12 @@
     command: 
      firewall-cmd --permanent --remove-service=http  --remove-service=https
     notify: firewalld reload
+
+  - name: Remove los archivos del site
+    file:
+      path: /var/www/html/index.html
+      state: absent
+
   
   handlers:
   - name: firewalld reload

@@ -9,3 +9,12 @@ dns.expertice.local
 
 [db_servers]
 db.expertice.local
+
+
+[redhat73]
+db.expertice.local
+
+[redhat78]
+web.expertice.local
+dns.expertice.local
+rek.expertice.local

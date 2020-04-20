@@ -1,6 +1,12 @@
-- hosts: db-servers
+- hosts: db_servers
   become: yes
-  vars_files:
-    -   vars/main.yml
+#  vars_files:
+#    - /var/lib/awx/projects/roles/geerlingguy.mysql/vars/main.yml
   roles:
     - { role: geerlingguy.mysql }
+
+#- name: Instalar y Configurar Mariadb
+#  hosts: db_servers
+#  roles:
+#    - role: geerlingguy.mysql
+#      become: yes
