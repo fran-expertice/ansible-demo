@@ -1,0 +1,9 @@
+---
+- name: Telegram Notifications ok
+  hosts: web.expertice.local
+  tasks:
+  - name: send a message to chat in playbook
+    telegram:
+      token: "1291052384:AAEFHpnvwdV3YsYpOmnz1szVlAL1GZOq60I"
+      chat_id: 756926933
+      msg: "Estamos jugando con Ansible"

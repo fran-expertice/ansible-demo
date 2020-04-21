@@ -1,10 +1,10 @@
-[webservers]
+[web_servers]
 web.expertice.local
 
-[logservers]
+[log_servers]
 rek.expertice.local
 
-[dnsservers]
+[dns_servers]
 dns.expertice.local
 
 [db_servers]
@@ -18,3 +18,9 @@ db.expertice.local
 web.expertice.local
 dns.expertice.local
 rek.expertice.local
+
+[linux_servers]
+web.expertice.local
+dns.expertice.local
+rek.expertice.local
+db.expertice.local

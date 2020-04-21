@@ -1,6 +1,6 @@
 ---
 - name: Instala y Configura WebServer 
-  hosts: all
+  hosts: web_servers
   tasks:
   - name: Copy static index.html to Webserver
     template:

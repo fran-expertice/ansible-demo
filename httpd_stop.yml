@@ -1,0 +1,9 @@
+---
+- name: Stop httpd service
+  hosts: web_servers
+  tasks:
+  - name: Activamos y Arrancamos el Apache  
+    service:
+     name: httpd
+     state: stopped
+     enabled: yes
